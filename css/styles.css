@@ -41,6 +41,7 @@ header .container {
 	padding-top: 10px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .logo {
@@ -51,6 +52,46 @@ header .container {
 .logo img {
 	height: 60px;
 }
+
+.call-button {
+	display: flex;
+	align-items: center;
+}
+
+.call-button a {
+	padding: 10px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	background-color: var(--service);
+}
+
+.call-button a:hover {
+	background-color: var(--secondary);
+}
+
+.call-button i {
+	margin-right: 10px;
+	color: var(--green);
+	font-size: 25px;
+}
+
+.call-details {
+	display: block;
+}
+
+.call-num p {
+	color: var(--grey);
+	font-weight: 600;
+}
+
+.call-action p {
+	font-size: 14px;
+	color: var(--grey);
+	text-align: center;
+}
+
 
 nav ul {
 	display: flex;
@@ -333,4 +374,219 @@ nav a:hover {
 .res-gallery-card img:hover {
 	height: 260px;
 	border: 1px solid var(--service);
+}
+
+/* ===== REVIEWS ===== */
+
+#reviews {
+	padding-bottom: 50px;
+}
+
+#reviews .reviews {
+	display: flex;
+	justify-content: center;
+}
+
+#reviews h2 {
+	text-align: center;
+}
+
+#reviews h3 {
+	text-align: center;
+}
+
+.review-card {
+	width: 33%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	border: 1px solid var(--service);
+	border-radius: 10px;
+	margin: 20px;
+}
+
+.review-photo img {
+	height: 70px;
+}
+
+.review-name p {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.review-position p {
+	margin-bottom: 10px;
+}
+
+.review-help {
+	background-color: var(--service);
+	border-radius: 10px;
+	padding: 5px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.review-help img {
+	height: 25px;
+	margin: 5px;
+}
+
+.review-text {
+	margin-top: 10px;
+}
+
+/* ===== CALL ===== */
+
+#call {
+	padding-bottom: 50px;
+}
+
+#call h2 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#call .call-button {
+	display: flex;
+	justify-content: center;
+}
+
+#call .call-button a {
+	padding: 25px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	background-color: var(--secondary);
+}
+
+#call .call-button a:hover {
+	background-color: var(--main);
+}
+
+#call .call-button i {
+	margin-right: 10px;
+	color: var(--green);
+	font-size: 35px;
+}
+
+#call .call-details {
+	display: block;
+}
+
+#call .call-num p {
+	color: var(--grey);
+	font-weight: 600;
+	font-size: 20px;
+}
+
+#call .call-action p {
+	font-size: 20px;
+	color: var(--grey);
+	text-align: center;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+	background-color: var(--service);
+}
+
+footer .container {
+	padding: 70px 0 50px 0;
+	display: flex;
+	align-items: flex-start;
+}
+
+footer nav {
+	width: 33%;
+}
+
+footer nav ul {
+	display: flex;
+	flex-direction: column;
+}
+
+footer nav ul li {
+	margin: 5px;
+}
+
+
+
+.payment {
+	width: 33%;
+	margin: auto;
+}
+
+.payment p {
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: var(--grey);
+}
+
+.methods {
+	display: flex;
+	justify-content: center;
+}
+
+.method {
+	margin: 5px;
+	height: 40px;
+	width: 80px;
+	border-radius: 10px;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.method img {
+	height: 40px;
+}
+
+.footer-contacts {
+	width: 33%;
+}
+
+.social-title {
+	width: 200px;
+	text-align: center;
+	margin: auto;
+}
+
+.social-title {
+	color: var(--grey);
+	font-weight: 600;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+}
+
+.social a {
+	margin: 5px;
+}
+
+.social img {
+	height: 25px;
+}
+
+.copyright {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.copyright p {
+	text-align: center;
+	color: var(--grey);
+	font-size: 14px;
 }
