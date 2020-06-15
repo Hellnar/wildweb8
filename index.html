@@ -2,41 +2,65 @@
 <html>
 <head>
 	<title>WildWeb8 | Продвижение в мессенджерах</title>
+	<link rel="icon" type="image/png" href="img/favicon.png"/> 
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
 <body>
 	<header>
 		<div class="container">
 			<div class="logo">
-				<a href="#"><img src="img/logo.png"></a>
+				<a href="index.html"><img src="img/logo.png"></a>
 			</div>
 
+			<nav>
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="#services">Услуги</a></li>
+					<li><a href="#results">Результаты</a></li>
+					<li><a href="#clients">Клиенты</a></li>
+					<li><a href="#reviews">Отзывы</a></li>
+					<li><a href="#call">Контакты</a></li>
+				</ul>
+			</nav>
+
 			<div class="call-button">
-				<a href="#">
+				<a href="#call-form">
 					<i class="fas fa-phone-alt"></i>
 					<div class="call-details">
 						<div class="call-num">
 							<p>+38(097)281-53-84</p>
 						</div>
 						<div class="call-action">
-							<p>Заказать звонок</p>
+							<p>Заказать услугу</p>
 						</div>
 					</div>
 				</a>
 			</div>
 
-			<nav>
-				<ul>
-					<li><a href="#">О нас</a></li>
-					<li><a href="#">Услуги</a></li>
-					<li><a href="#">Результаты</a></li>
-					<li><a href="#">Отзывы</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
+			<div id="call-form" class="call-form">
+				<div class="call-form-window">
+					<div class="close-button">
+						<a href="#">x</a>
+					</div>
+					<div class="call-form-content">
+						<h2>Заказать услугу</h2>
+						<h3>Расскажите подробнее, какая услуга вас интересует и какой результат вы желаете получить</h3>
+						<form action="https://formspree.io/xeqrkrbj" method="POST">
+							<label for="name">Имя</label>
+							<input name="name" placeholder="Введите имя">
+							<label for="email">Email</label>
+							<input type="email" name="name" placeholder="Введите Email">
+							<label for="message">Сообщение</label>
+							<textarea name="message" rows="5"></textarea>
+							<button type="submit">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
 
 		</div>
 	</header>
@@ -57,7 +81,7 @@
 					</ul>
 				</div>
 				<div class="intro-order">
-					<a href="#">Заказать</a>
+					<a href="#call-form">Заказать</a>
 				</div>
 			</div>
 			<div class="intro-image">
@@ -79,7 +103,7 @@
 				<!-- FIRST ROW -->
 				<div class="services-row">
 					<!-- FIRST CARD -->
-					<div class="service-card">
+					<div id="smm-card" class="service-card">
 						<i class="fas fa-chart-line"></i>
 						<div class="srv-card-title">
 							<p>SMM-продвижение</p>
@@ -88,9 +112,91 @@
 							<p>Обширная и индивидуальная работа по развитию бренда в социальных сетях. Разработка и внедрение рекламной стратегии под ваш проект, комплексное продвижение в соц. сетях и увеличение количества новых клиентов.</p>
 						</div>
 						<div class="srv-card-button">
-							<a href=#>Подробнее</a>
+							<a href="#smm-modal">Подробнее</a>
 						</div>
 					</div>
+	
+					<!-- FIRST CARD MODAL -->
+					<div id="smm-modal" class="service-modal">
+						<div class="service-modal-window">
+							<div class="close-button">
+								<a href="#smm-card">x</a>
+							</div>
+							<div class="service-modal-content">
+								<h2>SMM-продвижение</h2>
+								<h3>Обширная и индивидуальная работа по развитию бренда в социальных сетях. Разработка и внедрение рекламной стратегии под ваш проект, комплексное продвижение в соц. сетях и увеличение количества новых клиентов.</h3>
+								<div class="smm-modal-socials">
+									<div class="smm-modal-row">
+									<!-- VK -->
+									<div class="smm-modal-card">
+										<div class="smm-card-img">
+											<img src="img/vk.png">
+											<p>Вконтакте</p>
+										</div>
+										<div class="smm-card-description">
+											<p>Сообщество компании Вконтакте будет стабильным каналом продаж, который приносит весомую долю дохода. С помощью группы вы заявите о себе на рынке, наладите взаимодействие с аудиторией и получите новых клиентов.</p>
+										</div>
+									</div>
+									<!-- Instagram -->
+									<div class="smm-modal-card">
+										<div class="smm-card-img">
+											<img src="img/instagram.png">
+											<p>Instagram</p>
+										</div>
+										<div class="smm-card-description">
+											<p>Продвижение бизнес-аккаунта в Instagram это сейчас не желательно, а необходимо для Вашего бизнеса. Здесь вы найдете огромное количество лояльных клиентов на разного рода товары и услуги.</p>
+										</div>
+									</div>
+									</div>
+									<div class="smm-modal-row">
+									<!-- Facebook -->
+									<div class="smm-modal-card">
+										<div class="smm-card-img">
+											<img src="img/facebook.png">
+											<p>Facebook</p>
+										</div>
+										<div class="smm-card-description">
+											<p>Продвижение в Facebook выгодно тем, что здесь можно найти платежеспособную аудиторию для разного бизнеса. Социальная сеть популярна во всем мире, и в ней зарегистрировано много ваших потенциальных клиентов.</p>
+										</div>
+									</div>
+									<!-- OK -->
+									<div class="smm-modal-card">
+										<div class="smm-card-img">
+											<img src="img/ok.png">
+											<p>Одноклассники</p>
+										</div>
+										<div class="smm-card-description">
+											<p>Многие недооценивают значимость данной соц. сети для бизнеса, а зря. Продвижение в Одноклассниках подходит для разного бизнеса и способно привлечь большое число целевых клиентов и увеличить вашу прибыль.</p>
+										</div>
+									</div>
+									</div>
+									<div class="smm-modal-row">
+									<!-- Twitter -->
+									<div class="smm-modal-card">
+										<div class="smm-card-img">
+											<img src="img/twitter.png">
+											<p>Twitter</p>
+										</div>
+										<div class="smm-card-description">
+											<p>Продвижение в Twitter – это эффективный маркетинговый инструмент, подходящий абсолютно любому бизнесу. И помимо клиентов вы сможете получить от него SEO-эффект, что важно для Google и Яндекс.</p>
+										</div>
+									</div>
+									<!-- YT -->
+									<div class="smm-modal-card">
+										<div class="smm-card-img">
+											<img src="img/youtube.png">
+											<p>YouTube</p>
+										</div>
+										<div class="smm-card-description">
+											<p>Ежедневная аудитория YouTube свыше 1 миллиарда человек, которые проводят на сайте не менее 10 минут в день. Правильное продвижение Вашего канала даст огромное количество трафика, который принесет новые продажи вашему бизнесу.</p>
+										</div>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<!-- SECOND CARD -->
 					<div class="service-card">
 						<i class="fab fa-telegram-plane"></i>
@@ -101,9 +207,23 @@
 							<p>Telegram, Viber и WhatsApp — отличный способ привлечения дополнительного внимания к Вашему продукту или услуге. А так же очень эффективный способ получения лояльных клиентов и повторных продаж Ваших товаров и услуг.</p>
 						</div>
 						<div class="srv-card-button">
-							<a href=#>Подробнее</a>
+							<a href=#messengers-modal>Подробнее</a>
 						</div>
 					</div>
+
+					<!-- SECOND CARD MODAL -->
+					<div id="messengers-modal" class="service-modal">
+						<div class="service-modal-window">
+							<div class="close-button">
+								<a href="#smm-card">x</a>
+							</div>
+							<div class="service-modal-content">
+								<h2>Продвижение в мессенджерах</h2>
+								<h3>Популярные мобильные приложения, такие как Telegram, WhatsApp и Viber стали современной площадкой для передачи и обмена сообщениями. Сегодня их возможности и инструменты позволяют вести полноценный бизнес и быть еще на шаг ближе к своим клиентам. Любой проект можно адаптировать под продвижение в мессенджере для получения максимально эффективной отдачи в виде клиентов или заказов.</h3>
+							</div>
+						</div>
+					</div>
+
 					<!-- THIRD CARD -->
 					<div class="service-card">
 						<i class="fas fa-users-cog"></i>
@@ -114,9 +234,23 @@
 							<p>Администрирование ваших сообщества и аккаунтов в соц.сетях на всех этапах продвижения: от создания и оформления до ежедневного наполнения продающим контентом и внедрения воронок продаж.</p>
 						</div>
 						<div class="srv-card-button">
-							<a href=#>Подробнее</a>
+							<a href="#groups-modal">Подробнее</a>
 						</div>
 					</div>
+
+					<!-- THIRD CARD MODAL -->
+					<div id="groups-modal" class="service-modal">
+						<div class="service-modal-window">
+							<div class="close-button">
+								<a href="#smm-card">x</a>
+							</div>
+							<div class="service-modal-content">
+								<h2>Работа с сообществами</h2>
+								<h3>Работа с сообществами – неотъемлемая часть ведения современного бизнеса. Для получения заказов, продаж и звонков необходимо качественное ведение групп и страниц. Достичь необходимого результата можно только при регулярном обновлении контента сообщества и диалоге с посетителями.</h3>
+							</div>
+						</div>
+					</div>
+
 				</div>
 
 				<!-- SECOND ROW -->
@@ -131,9 +265,23 @@
 							<p>Комплекс действий по формированию положительной репутации Вашего бренда и увеличения доверия вокруг бизнеса. А так же работа с негативом, его устранение и создание лояльного отношения к вашей компании в Google и Яндекс.</p>
 						</div>
 						<div class="srv-card-button">
-							<a href=#>Подробнее</a>
+							<a href="#serm-modal">Подробнее</a>
 						</div>
 					</div>
+
+					<!-- FOURTH CARD MODAL -->
+					<div id="serm-modal" class="service-modal">
+						<div class="service-modal-window">
+							<div class="close-button">
+								<a href="#smm-card">x</a>
+							</div>
+							<div class="service-modal-content">
+								<h2>Управление репутацией (SERM)</h2>
+								<h3>Репутация – один из основных столпов, на которых строится бизнес в любой сфере. Авторитетные издания в сети всегда получают преимущества, поскольку современная аудитория склонна доверять только проектам с положительной историей. SERM (Search Engine Reputation Management) – это комплекс действий для формирования положительной репутации бренда в сети. Услуга является универсальной и подходит абсолютно любой компании, проекту, интернет-магазину.</h3>
+							</div>
+						</div>
+					</div>
+
 					<!-- SECOND CARD -->
 					<div class="service-card">
 						<i class="fas fa-columns"></i>
@@ -144,9 +292,23 @@
 							<p>Разработка и реализация одностраничного сайта с продающим дизайном, текстами и высокой конверсией. С помощью качественного Landing Page вы сможете увеличить прибыль и получить повторные продажи товаров и услуг.</p>
 						</div>
 						<div class="srv-card-button">
-							<a href=#>Подробнее</a>
+							<a href="#landing-modal">Подробнее</a>
 						</div>
 					</div>
+
+					<!-- FIFTH CARD MODAL -->
+					<div id="landing-modal" class="service-modal">
+						<div class="service-modal-window">
+							<div class="close-button">
+								<a href="#smm-card">x</a>
+							</div>
+							<div class="service-modal-content">
+								<h2>Создание Lnading Page</h2>
+								<h3>Landing Page – это отдельная страница, максимально оптимизированная под определенный вид услуг или товаров. Каждый лендинг должен быть привлекательным, информативным и эффективным, поскольку он должен конвертировать посетителей в покупателей. Именно эту задачу решает наша компания при реализации проекта для Вашего бизнеса.</h3>
+							</div>
+						</div>
+					</div>
+
 					<!-- THIRD CARD -->
 					<div class="service-card">
 						<i class="fas fa-bullseye"></i>
@@ -157,9 +319,23 @@
 							<p>АдминиНастройка и ведение контекстной рекламы для увеличения трафика и продаж. Оптимизация рекламных кампаний в Google AdWords и Яндекс.Директ под цели вашего бизнеса. Настойка ремаркетинга.</p>
 						</div>
 						<div class="srv-card-button">
-							<a href=#>Подробнее</a>
+							<a href="#context-modal">Подробнее</a>
 						</div>
 					</div>
+
+					<!-- SIXTH CARD MODAL -->
+					<div id="context-modal" class="service-modal">
+						<div class="service-modal-window">
+							<div class="close-button">
+								<a href="#smm-card">x</a>
+							</div>
+							<div class="service-modal-content">
+								<h2>Контекстная реклама</h2>
+								<h3>Контекстная реклама – это один из наиболее эффективных инструментов в сфере маркетинга. За короткий период времени бизнес может получить крупный поток целевой аудитории. Это услуга, которая может работать вместе и вместо SEO продвижения. Полный набор инструментов продвижения вместе с контекстной рекламой гарантирует существенный прирост аудитории и продаж.</h3>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -344,7 +520,7 @@
 				</div>
 			</div>
 
-			<div class="res-gallery">
+			<div id="clients" class="res-gallery">
 				<h2>Наши клиенты</h2>
 				<h3>Большая часть из наших клиентов становятся постоянными</h3>
 				<div class="res-gallery-row">
@@ -388,36 +564,35 @@
 						<img src="img/client1.jpg">
 					</div>
 					<div class="review-name">
-						<p>Ирина</p>
+						<p>Константин</p>
 					</div>
 					<div class="review-position">
 						<p>SMM-менеджер в Active Agency</p>
 					</div>
 					<div class="review-help">
-						<p>Мы помогали Ирине с:</p>
+						<p>Мы помогали Константину с:</p>
 						<div class="review-socials">
-						<img src="img/vk.png" draggable="false">
-						<img src="img/facebook.png" draggable="false">
-						<img src="img/instagram.png" draggable="false">
+							<img src="img/facebook.png" draggable="false">
+							<img src="img/instagram.png" draggable="false">
 						</div>
 					</div>
 					<div class="review-text">
-						<p>Наша компания расширилась, обязанностей стало больше, а времени на ведение сообществ практически не осталось. Отдала наши паблики под управление студии, рассчитывала, что нужно удержать уровень и поднять показатели на 5-10% в месяц. Сейчас аудитория выросла на 32% за два месяца, поток заказов удвоился. Очень качественно делают свою работу. Рекомендую к сотрудничеству.</p>
+						<p>Я занимаюсь созданием ландшафтного дизайна и найти клиентов становится сложнее, так как конкуренция растет. Решил попробовать прорекламировать себя в социальных сетях. Сотрудники из WildWeb8 все доходчиво объяснили, показали и запустили. Сейчас работаем на постоянной основе. Уже на протяжении 3 месяцев получаю от 5 до 12 клиентов, что в моей ситуации – невероятно много.</p>
 					</div>
 				</div>
 				<!-- SECOND CARD -->
 				<div class="review-card">
 					<div class="review-photo">
-						<img src="img/client1.jpg">
+						<img src="img/client2.jpg">
 					</div>
 					<div class="review-name">
-						<p>Ирина</p>
+						<p>Владимир</p>
 					</div>
 					<div class="review-position">
 						<p>SMM-менеджер в Active Agency</p>
 					</div>
 					<div class="review-help">
-						<p>Мы помогали Ирине с:</p>
+						<p>Мы помогали Владимиру с:</p>
 						<div class="review-socials">
 						<img src="img/vk.png" draggable="false">
 						<img src="img/facebook.png" draggable="false">
@@ -425,22 +600,22 @@
 						</div>
 					</div>
 					<div class="review-text">
-						<p>Наша компания расширилась, обязанностей стало больше, а времени на ведение сообществ практически не осталось. Отдала наши паблики под управление студии, рассчитывала, что нужно удержать уровень и поднять показатели на 5-10% в месяц. Сейчас аудитория выросла на 32% за два месяца, поток заказов удвоился. Очень качественно делают свою работу. Рекомендую к сотрудничеству.</p>
+						<p>У меня интернет-магазин товаров для спорта. Решил обратиться к WildWeb8, поскольку продажи, мягко говоря, не радовали. Где-то через полторы-две недели заметил приток обращений через Instagram с заказами. В дальнейшем принял решение развивать ВК и ФБ и ни разу не пожалел. А параллельно и активность в сообществе поднялась. Сейчас у меня от 70 до 90 заказов в среднем в сутки.</p>
 					</div>
 				</div>
 				<!-- THIRD CARD -->
 				<div class="review-card">
 					<div class="review-photo">
-						<img src="img/client1.jpg">
+						<img src="img/client3.jpg">
 					</div>
 					<div class="review-name">
-						<p>Ирина</p>
+						<p>Светлана</p>
 					</div>
 					<div class="review-position">
 						<p>SMM-менеджер в Active Agency</p>
 					</div>
 					<div class="review-help">
-						<p>Мы помогали Ирине с:</p>
+						<p>Мы помогали Светлане с:</p>
 						<div class="review-socials">
 						<img src="img/vk.png" draggable="false">
 						<img src="img/facebook.png" draggable="false">
@@ -448,7 +623,7 @@
 						</div>
 					</div>
 					<div class="review-text">
-						<p>Наша компания расширилась, обязанностей стало больше, а времени на ведение сообществ практически не осталось. Отдала наши паблики под управление студии, рассчитывала, что нужно удержать уровень и поднять показатели на 5-10% в месяц. Сейчас аудитория выросла на 32% за два месяца, поток заказов удвоился. Очень качественно делают свою работу. Рекомендую к сотрудничеству.</p>
+						<p>У меня салон красоты с 12 сотрудницами, часть из них сидели почти без заказов. После обращения к Дмитрию в WildWeb8, ситуация поменялась в течении месяца. Они начали активно развивать мне Инсту и предложили в дальнейшем Одноклассники. На данный момент у моих девочек стабильный поток клиентов и запись на 15-20 дней вперед. Классный результат, спасибо всей команде!</p>
 					</div>
 				</div>
 			</div>
@@ -459,7 +634,7 @@
 		<div class="container">
 			<h2>Свяжитеьс с нами для обсуждения заказа</h2>
 			<div class="call-button">
-				<a href="#">
+				<a href="#call-form">
 					<i class="fas fa-phone-alt"></i>
 					<div class="call-details">
 						<div class="call-num">
@@ -471,6 +646,11 @@
 					</div>
 				</a>
 			</div>
+			<h3>Мы также доступны в мессенджерах</h3>
+			<div class="call-messengers">
+				<a href="viber://add?number=380972815384" target="_blank"><img src="img/viber.png" draggable="false"></a>
+				<a href="tg://resolve?domain=wild_web_8" target="_blank"><img src="img/telegram.png" draggable="false"></a>
+			</div>
 		</div>
 	</section>
 
@@ -478,11 +658,12 @@
 		<div class="container">
 			<nav>
 				<ul>
-					<li><a href="#">О нас</a></li>
-					<li><a href="#">Услуги</a></li>
-					<li><a href="#">Результаты</a></li>
-					<li><a href="#">Отзывы</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="#services">Услуги</a></li>
+					<li><a href="#results">Результаты</a></li>
+					<li><a href="#clients">Клиенты</a></li>
+					<li><a href="#reviews">Отзывы</a></li>
+					<li><a href="#call">Контакты</a></li>
 				</ul>
 			</nav>
 
@@ -518,11 +699,11 @@
 					<p>Присоединяйтесь к нам в социальных сетях</p>
 				</div>
 				<div class="social">
-					<a href=""><img src="img/vk.png" draggable="false"></a>
-					<a href=""><img src="img/telegram.png" draggable="false"></i></a>
-					<a href=""><img src="img/instagram.png" draggable="false"></i></a>
-					<a href=""><img src="img/facebook.png" draggable="false"></i></a>
-					<a href=""><img src="img/twitter.png" draggable="false"></i></a>
+					<a href="https://vk.com/wildweb8com" target="_blank"><img src="img/vk.png" draggable="false"></a>
+					<a href="https://t.me/wild_web_8" target="_blank"><img src="img/telegram.png" draggable="false"></a>
+					<a href="https://www.instagram.com/wildweb8com/" target="_blank"><img src="img/instagram.png" draggable="false"></a>
+					<a href="https://www.facebook.com/wildweb8com" target="_blank"><img src="img/facebook.png" draggable="false"></a>
+					<a href="https://twitter.com/wildweb8com" target="_blank"><img src="img/twitter.png" draggable="false"></a>
 				</div>
 				<div class="copyright">
 					<p>Все права защищены</p>
