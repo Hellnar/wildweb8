@@ -26,6 +26,7 @@ h1 {
 h2 {
 	font-size: 30px;
 	color: var(--main);
+	text-align: center;
 }
 
 h3 {
@@ -37,6 +38,46 @@ h3 {
 .container {
 	margin: auto;
 	width: 80vw;
+}
+
+/* Table */ 
+
+table {
+	border-collapse: collapse;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+td, th {
+	border: 1px solid var(--service);
+	padding: 15px;
+	color: var(--grey);
+	text-align: center;
+}
+
+th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	color: var(--grey);
+}
+
+.table-th {
+	display: flex;
+	align-items: center;
+}
+
+table img {
+	height: 30px;
+	margin-right: 10px;
+}
+
+/* List */ 
+
+.features-list li {
+	margin: 15px;
+	font-size: 20px;
+	color: var(--grey);
 }
 
 /* ===== HEADER ===== */
@@ -883,4 +924,177 @@ footer nav ul li {
 	text-align: center;
 	color: var(--grey);
 	font-size: 14px;
+}
+
+/* ============================*/
+/* ===== MESSENGERS PAGE ===== */ 
+/* ============================*/
+
+#msg-intro .container {
+	padding-top: 50px;
+	min-height: 70vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#msg-table .container h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#msg-table {
+	background-color: var(--service);
+	padding: 50px;
+	margin-bottom: 50px;
+}
+
+#msg-table .table-th {
+	display: flex;
+	justify-content: center;
+}
+
+.table-order {
+	text-align: center;
+}
+
+.table-order a {
+	text-decoration: none;
+	padding: 5px 10px;
+	background-color: var(--secondary);
+	border-radius: 10px;
+	color: var(--grey);
+	font-weight: 600;
+}
+
+.table-order a:hover {
+	background-color: var(--main);
+	color: #fff;
+}
+
+/* Why section */ 
+#msg-why {
+	padding: 50px 0;
+	background-color: var(--service);
+}
+
+/* Features section */
+
+#msg-features {
+	padding: 50px 0;
+}
+
+.msg-sides {
+	display: flex;
+	align-items: center;
+}
+
+.mgs-why-left img {
+	height: 300px;
+}
+
+.msg-features-row {
+	display: flex;
+	justify-content: center;
+}
+
+.msg-features-card {
+	width: 200px;
+	margin: 20px;
+}
+
+.msg-features-card i {
+	font-size: 30px;
+	color: var(--grey);
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+
+.msg-features-card p {
+	text-align: center;
+}
+
+/* ============================*/
+/* ===== GROUPS PAGE ===== */ 
+/* ============================*/
+
+#groups-table {
+	padding: 50px 0;
+	margin-bottom: 50px;
+	background-color: var(--service);
+}
+
+#groups-table h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#groups-table h3 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#groups-table .table {
+	display: flex;
+	justify-content: center;
+}
+
+/* ============================*/
+/* ===== SERM PAGE ===== */ 
+/* ============================*/
+
+#serm-table {
+	padding: 50px 0;
+	margin-bottom: 50px;
+	background-color: var(--service);
+}
+
+#serm-table h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#serm-table h3 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#serm-table .table {
+	display: flex;
+	justify-content: center;
+}
+
+/* ============================*/
+/* ===== CONTEXT PAGE ===== */ 
+/* ============================*/
+
+#context-table {
+	padding: 50px 0;
+	margin-bottom: 50px;
+	background-color: var(--service);
+}
+
+#context-table h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#context-table h3 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#context-table .table {
+	display: flex;
+	justify-content: center;
+}
+
+#context-table th {
+	width: 20%;
+	text-align: center;
+}
+
+#context-table .first-row {
+	width: 20%;
 }
